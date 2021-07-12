@@ -1,4 +1,6 @@
-const inputs = document.querySelectorAll('input');
+
+document.addEventListener("DOMContentLoaded", function(){
+    const inputs = document.querySelectorAll('input');
 
 inputs.forEach(input => {
     input.addEventListener('click', (e) => {
@@ -10,3 +12,4 @@ inputs.forEach(input => {
         })
     }) 
 })
+  });
