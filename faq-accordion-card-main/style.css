@@ -139,7 +139,7 @@ input:checked ~ label span {
   .image-container {
     padding: 0;
     margin: 0 auto;
-    width: auto;
+    width: 30%;
     margin-top: -110px;
     overflow: visible;
   }
