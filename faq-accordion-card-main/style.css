@@ -20,6 +20,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 930px;
   background-color: white;
   grid-template-columns: repeat(2, 1fr);
@@ -45,9 +46,10 @@ body {
 
 .outher {
   position: absolute;
-  top: 310px;
-  left: 220px;
+  top: 50%;
+  left: -1rem;
   z-index: 2;
+  margin: -5rem;
 }
 
 .inner {
@@ -80,10 +82,12 @@ body {
 .faq-container span {
   float: right;
   transition: 0.4s;
+  margin-left: auto;
 }
 
 label {
-  display: block;
+  align-items: center;
+  display: flex;
   cursor: pointer;
   text-align: left;
   padding: 15px 15px 15px 0px;
@@ -100,7 +104,7 @@ input {
 }
 
 .content {
-  padding: 5px 0;
+  padding: 5px 0 15px;
   color: hsl(240, 6%, 50%);
   font-size: 14px;
   overflow: hidden;
@@ -110,8 +114,9 @@ input {
 }
 
 input:checked ~ .content {
-  height: 64px;
+  height: auto;
   opacity: 1;
+  padding: 5px 0px 15px;
 }
 
 input:checked ~ label {
@@ -136,6 +141,7 @@ input:checked ~ label span {
     margin: 0 auto;
     width: auto;
     margin-top: -110px;
+    overflow: visible;
   }
   .inner {
     overflow: visible;
